@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package factorialdenumerogrande;
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Adrian
+ */
+public class Factorialdenumerogrande {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     
+        long factorial=1;
+        long numero;
+        
+        Scanner cantidad = new Scanner (System.in);
+        System.out.println("ingrese un numero");
+        numero=cantidad.nextInt();
+        
+        for (long i = numero; i > 0; i--) {
+            factorial=factorial*i;
+        System.out.println("El factorial de : "+numero+ " es:"+factorial);}
+        
+        
+        
+       
+        
+        
+    }
+    
+}
